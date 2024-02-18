@@ -1,16 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chips!</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.cdnfonts.com/css/terminal" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Bitburner</title>
 </head>
+
 <body>
+  <header id="header">
+    <img src="https://plugins.jetbrains.com/files/18338/369507/icon/pluginIcon.svg" alt="Bitburner icon"
+      id="header-img">
+    <nav id="navbar">
+      <ul>
+        <li>
+          <a class="nav-link" href="#decsription">Decsription</a>
+        </li>
 
-      <header id="header">
-        <img src="" id="header-img" alt="">
-        <nav id="navbar"></nav>
-      </header>  
+        <li>
+          <a class="nav-link" href="#showcase">Trailer</a>
+        </li>
 
-</body>
+        <li>
+          <a class="nav-link" href="#demo">Demo</a>
+        </li>
+
+        <li>
+          <a class="nav-link" href="#systemRequiredments">System Requiredments</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Top Navigation Menu -->
+  <div class="topnav">
+    <a href="#home" class="active">
+      <img alt="Bitburner Icon" id="header-img-mobile"
+        src="https://plugins.jetbrains.com/files/18338/369507/icon/pluginIcon.svg">
+    </a>
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks">
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+    </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }  
+  </script>
+
+  <main>
+    <section id="decsription">
+      <h2>Bitburner</h2>
+
+      <header>Decsription</header>
+      <p>Bitburner is a programming-based incremental game. Write scripts in JavaScript to automate gameplay, learn
+        skills, play minigames, solve puzzles, and more in this cyberpunk text-based incremental RPG.</p>
+      <p>After 5 years of development, contributions from hundreds of developers, the critically acclaimed open source
+        programming hacking sim is available on Steam.</p>
+      <p>Inspired by games like Else Heart.break(), Hacknet, Uplink, and Deus Ex, Bitburner is a programming-based idle
+        incremental RPG where you, the player, take the role of an unknown hacker in a dark, dystopian world. The game
+        provides a variety of mechanics and systems that can be changed through coding and solved or automated in
+        whatever way you find suitable.</p>
+
+      <p>While a very basic programming background is recommended, it is not required to play the game!</p>
+      <ul>
+        <li>Write scripts in JavaScript to automate your gameplay</li>
+        <li>Hack through a network of servers to train your abilities and earn money</li>
+        <li>Solve real programming questions to hone your skills and earn rewards</li>
+        <li>Improve your character with 100+ Augmentations</li>
+        <li>Trade in the stock market and write automated trading scripts</li>
+        <li>Interact with various gameplay mechanics to increase your stats and earn money</li>
+        <li>Explore the world and discover different companies, locations, and factions</li>
+        <li>Mini-games</li>
+        <li>Unlock secret perma-upgrades</li>
+        <li>Continuing development!</li>
+      </ul>
+    </section>
+    <section id="showcase">
+      <header>Trailer Out Now!</header>
+      <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/YO_Ckjke7uE?si=YxDDawxIk1Qf0Rff"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </section>
+
+    <section id="demo">
+      <p>Interested in a demo?</p>
+      <form action="https://www.freecodecamp.com/email-submit">
+        <label for="">
+          <label for="">Get in touch!</label>
+          <input required type="email" name="email" id="email" placeholder="user@gmail.com">
+          <input type="submit" id="submit" value="Request">
+        </label>
+      </form>
+    </section>
+
+
+    <section id="systemRequiredments">
+      <h2>SYSTEM REQUIREMENTS</h2>
+      <pre>
+WindowsmacOSSteamOS + Linux
+MINIMUM:
+OS *: Windows 7 and later are supported
+Processor: An Intel Pentium 4 processor or later that's SSE2 capable
+Memory: 512 MB RAM
+Graphics: Intel Integrated Graphics
+Storage: 500 MB available space
+Sound Card: N/A
+* Starting January 1st, 2024, the Steam Client will only support Windows 10 and later versions.
+          </pre>
+    </section>
+  </main>
+
 </html>
