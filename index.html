@@ -14,6 +14,7 @@
   <header id="header">
     <img src="https://plugins.jetbrains.com/files/18338/369507/icon/pluginIcon.svg" alt="Bitburner icon"
       id="header-img">
+      <h2>Bitburner</h2>
     <nav id="navbar">
       <ul>
         <li>
@@ -43,9 +44,10 @@
     </a>
     <!-- Navigation links (hidden by default) -->
     <div id="myLinks">
-      <a href="#news">News</a>
-      <a href="#contact">Contact</a>
-      <a href="#about">About</a>
+          <a href="#decsription">Decsription</a>
+          <a href="#showcase">Trailer</a>     
+          <a href="#demo">Demo</a>
+          <a href="#systemRequiredments">System Requiredments</a>
     </div>
     <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -65,19 +67,19 @@
 
   <main>
     <section id="decsription">
-      <h2>Bitburner</h2>
-
+      <div class="content">
       <header>Decsription</header>
-      <p>Bitburner is a programming-based incremental game. Write scripts in JavaScript to automate gameplay, learn
-        skills, play minigames, solve puzzles, and more in this cyberpunk text-based incremental RPG.</p>
-      <p>After 5 years of development, contributions from hundreds of developers, the critically acclaimed open source
-        programming hacking sim is available on Steam.</p>
-      <p>Inspired by games like Else Heart.break(), Hacknet, Uplink, and Deus Ex, Bitburner is a programming-based idle
-        incremental RPG where you, the player, take the role of an unknown hacker in a dark, dystopian world. The game
-        provides a variety of mechanics and systems that can be changed through coding and solved or automated in
-        whatever way you find suitable.</p>
-
-      <p>While a very basic programming background is recommended, it is not required to play the game!</p>
+      
+        <div>Bitburner is a programming-based incremental game. Write scripts in JavaScript to automate gameplay, learn</div>
+          skills, play minigames, solve puzzles, and more in this cyberpunk text-based incremental RPG.
+        <div>After 5 years of development, contributions from hundreds of developers, the critically acclaimed open source</div>
+          programming hacking sim is available on Steam.
+        <div>Inspired by games like Else Heart.break(), Hacknet, Uplink, and Deus Ex, Bitburner is a programming-based idle</div>
+          incremental RPG where you, the player, take the role of an unknown hacker in a dark, dystopian world. The game
+          provides a variety of mechanics and systems that can be changed through coding and solved or automated in
+          whatever way you find suitable.
+        <div>While a very basic programming background is recommended, it is not required to play the game!</div>
+    </div>
       <ul>
         <li>Write scripts in JavaScript to automate your gameplay</li>
         <li>Hack through a network of servers to train your abilities and earn money</li>
@@ -93,10 +95,12 @@
     </section>
     <section id="showcase">
       <header>Trailer Out Now!</header>
-      <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/YO_Ckjke7uE?si=YxDDawxIk1Qf0Rff"
+      <div class="video-container">
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/YO_Ckjke7uE?si=YxDDawxIk1Qf0Rff"
         title="YouTube video player" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
+        allowfullscreen></iframe> 
+      </div>
     </section>
 
     <section id="demo">
@@ -126,5 +130,4 @@ Sound Card: N/A
           </pre>
     </section>
   </main>
-
 </html>
