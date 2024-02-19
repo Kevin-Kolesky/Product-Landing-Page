@@ -26,7 +26,7 @@
         </li>
 
         <li>
-          <a class="nav-link" href="#demo">Demo</a>
+          <a class="nav-link" href="#news">News</a>
         </li>
 
         <li>
@@ -36,7 +36,7 @@
     </nav>
   </header>
 
-  <!-- Top Navigation Menu -->
+  <!-- Mobile Navigation Menu -->
   <div class="topnav">
     <a href="#home" class="active">
       <img alt="Bitburner Icon" id="header-img-mobile"
@@ -68,18 +68,14 @@
   <main>
     <section id="decsription">
       <div class="content">
-      <header>Decsription</header>
+      <header class="title">Decsription</header>
       
-        <div>Bitburner is a programming-based incremental game. Write scripts in JavaScript to automate gameplay, learn</div>
-          skills, play minigames, solve puzzles, and more in this cyberpunk text-based incremental RPG.
-        <div>After 5 years of development, contributions from hundreds of developers, the critically acclaimed open source</div>
-          programming hacking sim is available on Steam.
-        <div>Inspired by games like Else Heart.break(), Hacknet, Uplink, and Deus Ex, Bitburner is a programming-based idle</div>
-          incremental RPG where you, the player, take the role of an unknown hacker in a dark, dystopian world. The game
-          provides a variety of mechanics and systems that can be changed through coding and solved or automated in
-          whatever way you find suitable.
-        <div>While a very basic programming background is recommended, it is not required to play the game!</div>
-    </div>
+        <p>Bitburner is a programming-based incremental game. Write scripts in JavaScript to automate gameplay, learn skills, play minigames, solve puzzles, and more in this cyberpunk text-based incremental RPG.</p>
+        <p>After 5 years of development, contributions from hundreds of developers, the critically acclaimed open source programming hacking sim is available on Steam.</p>
+        <p>Inspired by games like Else Heart.break(), Hacknet, Uplink, and Deus Ex, Bitburner is a programming-based idl incremental RPG where you, the player, take the role of an unknown hacker in a dark, dystopian world. The game provides a variety of mechanics and systems that can be changed through coding and solved or automated in whatever way you find suitable.</p>
+        <p>While a very basic programming background is recommended, it is not required to play the game!</p>  
+
+       <h2>Core Concepts</h2> 
       <ul>
         <li>Write scripts in JavaScript to automate your gameplay</li>
         <li>Hack through a network of servers to train your abilities and earn money</li>
@@ -94,29 +90,87 @@
       </ul>
     </section>
     <section id="showcase">
-      <header>Trailer Out Now!</header>
+      <header class="title">Trailer Out Now!</header>
       <div class="video-container">
         <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/YO_Ckjke7uE?si=YxDDawxIk1Qf0Rff"
         title="YouTube video player" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen></iframe> 
       </div>
-    </section>
-
-    <section id="demo">
-      <p>Interested in a demo?</p>
-      <form action="https://www.freecodecamp.com/email-submit">
-        <label for="">
-          <label for="">Get in touch!</label>
-          <input required type="email" name="email" id="email" placeholder="user@gmail.com">
-          <input type="submit" id="submit" value="Request">
+      <form autocomplete="off" action="https://www.freecodecamp.com/email-submit">
+        <label for="">Interested in a demo?</label> <br>
+        <label>Get in touch: </label>
+        <div class="field">
+          <input required type="email" name="email" id="email" placeholder="Enter email here!">
+          <div class="line"></div>
+        </div>
+        <center><input type="submit" id="submit" value="Request"></center>  
         </label>
       </form>
     </section>
 
+  <section id="news">
+    <header class="title"> Game now in open beta!</header>
+    <h2>Release notes:</h2>
+
+    <p>It was reported that 2.5.0 was the most recent release to work on Windows 7 and 8, so a new legacy branch was added for Steam users who are on these older OSes. Newer versions of the game can be played on the web:</p>
+    <p>Release branch: https://bitburner-official.github.io/ Development branch: https://bitburner-official.github.io/bitburner-src/</p>
+    <p>The Development version (available on the Steam development branch or via the web link above) contains a new IPvGO mechanic and a new BN14 that revolves around this mechanic. This will be officially released in the next game release version 2.6.0.</p>
+
+    <center><h2>v2.5.2 - 2 January 2024</h2></center>
+    <h2>API</h2>
+    <ul class="release">
+      <li>Added limit of 1e9 for additionalMsec property of HGWOptions (@d0sboots)</li>
+      <li>ns.share effect is now boosted by host server core count (@TheAimMan)</li>
+      <li>Fix a bug with HGWOptions that caused the default value to be 1 thread even for scripts running multiple threads (@DJMatch3000)</li>
+      <li>(Singularity) ns.singularity.applyToCompany now returns the JobName if a job was obtained, or null otherwise - previously was boolean (@jjclark1982)</li>
+      <li>(Singularity) ns.singularity.getCurrentWork now requires access to the singularity API (@TheAimMan)</li>
+      <li>(Singularity) Added ns.singularity.getFactionInviteRequirements (@jjclark1982)</li>
+      <li>(Stanek) ns.stanek.chargeFragment is now boosted by host server core count (@TheAimMan)</li>
+    </ul>
+    <h2>BUGFIX</h2>
+    <ul class="release">
+      <li>(Bladeburner) Operation team size modal now handles keyboard submission correctly (@Snarling)(Corporation) Fixed an issue with Warehouse size being out of sync following prduct sale (@Kelenius)</li>
+      <li>(Factions) Fixed some display order issues, and possible multiple entries for a faction (@jjclark1982)</li>
+      <li>(Factions) Fixed an issue with certain factions not becoming "known" when joining them (@jjclark1982)</li>
+      <li>(Grafting) Entropy now has the correct negative effect on hacknet multipliers (@TheAimMan)</li>
+      <li>(Hashnet) Fixed an issue where the SF9.3 reward server had an incorrect number of cores (@cigarmemr)</li>
+      <li>(Terminal) Fixed a bug with script autocompletion when the script is inside a subdirectory (@draughtnyan)</li>
+    </ul>
+    <h2>MISC</h2>
+    <ul class="release">
+      <li>Added basic protection for certain global values that could cause a recovery screen if reassigned (@Snarling)</li>
+      <li>Fixed conditions for an easter egg message (@cigarmemr)</li>
+      <li>(Bitverse) Changed listed difficulty for BN3 to "hard"</li>
+      <li>(CodingContract) Reduce incidence of $0 coding contract rewards in circumstances where the reward would be $0 (@trambelus)</li>
+      <li>(Corporation) Added better accounting of funds transactions (@jjclark1982)</li>
+      <li>(Corporation) Remove cooldown on starting over corporation, but maintain remaining cooldown for selling shares (@jjclark1982)</li>
+      <li>(Corporation) Removed some legacy code that was not doing anything (@catloversg)</li>
+      <li>(DevMenu) Added the ability to add/remove sleeves from the dev menu (@Sphyxis, @Snarling)</li>
+      <li>(Docs) Fixed various typos in documentation (@tdpeuter)</li>
+      <li>(Factions) Added a documentation page for faction join requirements (@jjclark1982)</li>
+      <li>(Formulas) Added clarification for the unit of time returned by hackTime, growTime, and weakenTime functions (@d0sboots)</li>
+      <li>(Ports) Promises from port.nextWrite resolve in the same order they were created, instead of reverse order (@LJNeon)</li>
+      <li>(Sleeve) Add task counters for Crime and Bladeburner tasks (@TheAimMan)</li>
+      <li>(Stock) Add some randomization to timing for stockmarket forecast change events (@Caldwell-74)</li>
+      <li>(Terminal) Added the --all option for unalias, to allow removing all aliases (@Sphyxis)</li>
+      <li>Nerf noodle bar (various contributors)</li>
+    </ul>
+    <h2>UI</h2>
+    <ul class="release">
+      <li>Message for buying TOR router no longer implies the need to connect to darkweb (@Kelenius)</li>
+      <li>(Company) Rework of the job location details (@jjclark1982)</li>
+      <li>(Company) Added previous/next buttons for job location if the player has multiple jobs (@Kelenius)</li>
+      <li>(Factions) Only show warning about enemy factions for factions with enemies (@jjclark1982)</li>
+      <li>(Stanek) Improved the display of the Stanek grid (@Kelenius)</li>
+    </ul>
+
+
+
+  </section>
 
     <section id="systemRequiredments">
-      <h2>SYSTEM REQUIREMENTS</h2>
+      <h2 class="title">SYSTEM REQUIREMENTS</h2>
       <pre>
 WindowsmacOSSteamOS + Linux
 MINIMUM:
@@ -126,8 +180,7 @@ Memory: 512 MB RAM
 Graphics: Intel Integrated Graphics
 Storage: 500 MB available space
 Sound Card: N/A
-* Starting January 1st, 2024, the Steam Client will only support Windows 10 and later versions.
-          </pre>
+* Starting January 1st, 2024, the Steam Client will only support Windows 10 and later versions.</pre>
     </section>
   </main>
 </html>

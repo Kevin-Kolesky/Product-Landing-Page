@@ -12,7 +12,6 @@ User Stories:
 
 5. When you click a .nav-link button in the nav element, you are taken to the corresponding section of the landing page
 
-
 6. You can watch an embedded product video with id="video"
 
 7. Your landing page has a form element with a corresponding id="form"
