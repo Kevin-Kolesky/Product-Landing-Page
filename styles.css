@@ -2,6 +2,9 @@ body {
     font-family: 'Terminal', sans-serif;
     color: rgb(1, 186, 1);
     background-color: black;
+    margin: var(--top-spacing) auto;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 #header {
@@ -20,17 +23,12 @@ html {
     scroll-padding-top: var(--top-spacing);
   }
 
-  body {
-    margin: var(--top-spacing) auto;
-    
-  }
-
 #header-img {
     width: 4rem;
     height: auto;
 }
 
-#navbar ul {
+#nav-bar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -41,23 +39,23 @@ html {
     align-items: center;
 }
 
-#navbar li {
+#nav-bar li {
     float: right;
     border-left: 1px solid #bbb;
 }
 
-#navbar li a {
+#nav-bar li a {
     display: block;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-#navbar li a:hover {
+#nav-bar li a:hover {
     background-color: #111;
 }
 
-#navbar li:first-child {
+#nav-bar li:first-child {
     border-left: none;
 }
 
@@ -94,6 +92,10 @@ pre{
     width: fit-content;
     border-radius: 3px;
     padding: 7px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 1.2em; 
+
 }
 
 .release{
@@ -198,7 +200,12 @@ h2{
       body {
         margin: var(--top-spacing) auto;
       }
-    
+
+    main{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+ 
     html, body {
         overflow-x: hidden;
     }
